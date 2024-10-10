@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chai aur Code | DOM</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+<ul class="language">
+    <li>Javascript</li>
+</ul>
+</body>
+<script>
+    // step 1 :- yahan hum add kar rha hain kuch lis ko with th ehelp of create element and innerHTML
+    function addLanguage(langName)
+    {
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').
+        appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("typrScript")
+
+
+    // step 2:- hum same li ko add kr rha hai with some different techniques,
+    function addOptiLanguage(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+    addLanguage('goLang')
+
+
+    // step 3 :- ########### now ab huma value ko edit karna hai uska liya huma usa select karna padega. with the help of replaceWith
+    // Edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "Mojo";
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli); // Mojo
+
+
+    // step 4 :- isma hum value ko change kar ka dekhta hai with the help of outerHtml
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+
+    // step 5 :- isma hum goLang ko remove karta hai remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+</html> </title>
+</head>
+<body>
+
+</body>
+</html>

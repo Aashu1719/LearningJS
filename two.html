@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+
+<div class="parent">
+    <div class="class">Monday</div>
+    <div class="class">Tuesday</div>
+    <div class="class">Wednesday</div>
+    <div class="class">Thursday</div>
+</div>
+</body>
+
+<script>
+    const parent = document.querySelector('.parent')
+
+     console.log(parent);
+     console.log(parent.children); // yahan huma mila hai html collection
+     console.log(parent.children[1].innerHTML); // Tuesday
+
+
+     for (let i = 0; i < parent.children.length; i++) {
+         console.log(parent.children[i].innerHTML);
+
+ // two.html:64 Monday
+ // two.html:64 Tuesday
+ // two.html:64 Wednesday
+ // two.html:64 Thursday
+     }
+
+ // ab hum child ka color bhi change karenga and firstElementChild and lastElementChild ko bhi print karenga
+ parent.children[1].style.color = "orange"
+
+ // console.log(parent.firstElementChild);
+ // console.log(parent.lastElementChild);
+ // its gives monday and thursday
+
+
+ // aur aisa nhi hai ki hum sirf parent sa child pe hi aa sakta hai hum child sa parent pe bhi ja sakte hain.
+ // .....
+ const dayOne =  document.querySelector('.day')
+ console.log(dayOne);
+ // console.log(dayOne.parentElement);
+ // console.log(dayOne.parentElementSibling);
+
+
+
+</script>
+
+</html>

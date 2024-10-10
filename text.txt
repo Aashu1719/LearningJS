@@ -1,0 +1,66 @@
+// Title :- ek duniya aise bhi
+
+// characters :- 1. Abhishek(hero), Aashutosh (Brave), Vikas(Dharmik), Vishal(Childrent but serious), Amit(Comedian), Anshika(Chulbuli), Soumya(Fatty hunger), Roma(Bhatiya)
+
+
+// to ye kahani suru hoti hai ek office picninc sa.
+// kafi samaya sa wo log kahin ghumna nhi gaye tha to unhona plan bnaya ki kahin bhara door ghoomna chalta hai, aise jagh jo thodi untouch ho, ye baathai saal 3010 ki jab khane ko duniya to bhaut tarraki kar chuki thi lekin,  wo bas sikka ka ek pahlu tha ek pahelu aur tha jispa sayad hi kisi ka dhyan jata uspa kam i logo ka dhyan jata hai.
+
+// so what hum apni kahani aage jaare rakhta hai :-
+unhone
+
+In master branch hum apni kahani ko jari rakhenga
+
+
+
+// 10-9
+
+Lec :- 32
+
+ 6. Text ko nikalna ka liya humara pass 3 tarika hai
+ 1st hai textContext 2nd hai innerHtml, and 3rd hai innerText
+
+ // 6.1 now see the differnce in b/w innerText and innerContext
+
+ innerText :- ye jo hai huma jo text visible hota hai wo dikhata hai.
+
+ innerContext :- ye jo hai huma us cheej ka ander jo bhi text hota hai wo sab dikhata hai.
+ // ex :- at line no 24-25
+
+ check.textContent
+'This text is just showing the difference b/w innerText and innerContext test text'
+
+check.textContent
+'This text is just showing the difference b/w innerText and innerContext test text'
+
+check.innerHTML
+'This text is just showing the difference b/w innerText and innerContext <span style="display: none;">test text</span>'
+
+
+innerHTML :- isma huma complete uska html mil jata hai
+
+
+// 7 :- querySelector -- img and different type
+// querySelector on heading and ul
+// querySelector save into the variable
+// access one of the list and change the style for that
+
+
+// 8 ###################### ###############################
+// querySelectorAll
+// is example mai hum ek li ka colour change kar rha hai
+// refrence query selector all image refrence 2.
+// quey selector jo hai wo node list mai value ko return karta hai, to huma kuch bhi chnage karna hai to hum [0, 1, 2, 3] is tarika sa cheejo ko change karenga.
+
+// 8.1 :- agar kuch single bhi hai to bhi hum usa direct chnage nhi kar sakta uska liya bhi huma [array style ma 0, 1, 2] aisa hi select karna padega
+
+
+
+// ################################## #################################### ###########################
+L :- 33
+// How to create a new element in DOM
+
+// ek script likhi hai two.html mai and parent ko call kiya hai to huma div ka prent class mil gya hai, then humna parent.children likha hai jiska through huma uska ander ka details mil gye hain.
+
+
+
