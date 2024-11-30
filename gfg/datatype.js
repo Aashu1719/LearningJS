@@ -121,6 +121,15 @@ let carss;    // Value is undefined, type is undefined
 
 
 
+const map = new Map([
+    ["name", "Akash"],
+    ["age", 25],
+    ["city", "Noida"]
+]);
+
+for (let [key, value] of map) {
+    console.log(`${key}: ${value}`);
+}
 
 
 

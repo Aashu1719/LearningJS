@@ -44,8 +44,11 @@ let myArr = ["Js", "Java", "Cpp", "Python"]
 for (const key in myArr) {
         // console.log(key);
         
-        // Op :- yahan pe huma array ka index mila hai jisa ye key samjh raha hai uski values nahi uska liya huma kuch aur try karna padega
-//         0
+        // Op :- yahan pe huma array ka index mila hai jisa ye key samjh raha hai uski values nahi uska liya huma kuch aur try karna padega 
+
+        // yahan pe yahin jo hai wo difference hai ki ye values ko nhi uthata hai like for of loop ye pe huma keys default and generally jo values hai wo key value pair mai hi milti hai. \
+
+// 0
 // 1
 // 2
 // 3

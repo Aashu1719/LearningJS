@@ -56,11 +56,14 @@ map.set('FR', "France")
 // agr hum isma dubara sa ('IN', "India ko write kar ka print karenga to ye usko nahi lega and yahan pe kuch bhi nhi hoga, because ye sirf unique values ko leta hai, and ye jis order mai hum value ko transfer karenga usi order mai ye value ko print karega")
 
 // console.log(map);
-// Map(3) {
+
+// OP :  Map(3) {
 //     'IN' => 'India',
 //     'USA' => 'Unites States of America',
 //     'FR' => 'France'
 //   }
+
+
 
 // step 2.2 :- now we apply forof on maps
 
@@ -83,6 +86,8 @@ for (const [keysss, valuesss] of map) {
 // USA :- Unites States of America
 // FR :- France
 }
+
+
 
 
 // Step :-3 ab hum forOf loop ko object ka uper print krwa ka dekhta hain

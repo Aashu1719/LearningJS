@@ -396,4 +396,206 @@ gfg();
 
 
 
-// Js Comma Operator : 
+// Js Comma Operator : Its evalutaes the operands from left to right sequentially and returns the value of the rightmost operand. 
+// It used as a seperator for ultiple expressions at a place that requires a single expression. 
+// syntax : Expression1, expression2, expression3,,,, so on
+
+function Func1() {
+    console.log('one');
+    return 'one';
+}
+function Func2() {
+    console.log('two');
+    return 'two';
+}
+function Func3() {
+    console.log('three');
+    return 'three';
+}
+
+// Three expressions are
+// given at one place
+let x = (Func1(), Func2(), Func3());
+
+// console.log(x);
+
+
+// Ex : 2 : we used comma operators mostly in loops
+for (let a = 0, b=5; a<=5; a++, b--) {
+    // console.log(a, b);
+}
+
+
+// Ex : 3 : using the comma operator to initiallize multiple variable in a single line. 
+let a =1, b =2, c=3;
+console.log("Initial values");
+// console.log("a:", a);
+// console.log("b", b);
+// console.log("c", c);
+
+// using comma operator to update multiple values 
+(a *= 2), (b *=  3), (c *= 4);
+
+console.log("Updated values :");
+// console.log("a:", a);
+// console.log("b", b);
+// console.log("c", c);
+
+
+
+
+
+// ############################################## JS Unary Operators : This operators works on a single operand and perform various operations, evaulating data type, negation of value, etc. 
+
+/*
+Unary Plus (+) Operator
+Unary Minus (-) Operator
+Unary Increment (++) Operator
+Unary Decrement (–) Operator
+Logical NOT (!) Operator
+Bitwise NOT (~) Operator
+typeof Operator
+delete Operator
+void Operator 
+*/
+
+
+// 1. Unary Plus (+) Operator :- The unary plus (+) converts an operand into a number, if possible. It is commonly used to ensure numerical operations on variables that may contain numeric strings.
+
+// Ex :- 1 : In this example the unary plus converts the string "12" into the number 12, 
+// but in the second case, the unary plus try to converts the string "Geeks" into a number, but its not a valid number so its gives NAN.
+{ 
+let str1 = "12";
+
+// Using umary plus to convert string to number
+let num = +str1;
+console.log(num); // 12
+ 
+// Here we are using of typeof operator
+console.log(typeof (num)); // number
+
+// "Geeks" cannot be converted to a number
+let str2 = +"Geeks";
+console.log(str2); // NAN
+
+}
+
+
+
+// 2. Unary Minus (-) Operator : The unary negation operator is used to convert its operand to a negative number if it isn,t already a negative number
+// Ex :- 2 
+{
+    let str1 = "12";
+
+    // Unary negation, 
+    let num = -str1;
+    console.log(num); // -12
+
+    // try to convert a string into a number
+    let str2 = -"Geeks";
+    console.log(str2); // NAN
+    
+}
+
+
+
+// 3. Unary Increment Operator (++) : This operator adds 1 to its operands value and update the value. 
+// 3.1 :- Postfix : The current value of the operand is used then updated by +1.
+// 3.2 :- Prefix : The current value will be updated one then its going to use
+
+// Case 1 : Postfix 
+{
+let num = 12;
+
+// The current value of 'num' is used, 
+// then num is incremented is 13
+let numPostfix = num++;
+console.log(numPostfix); // Op : 12
+
+// Updated value of num
+console.log(num);
+
+
+// Case 2 : Prefix
+let num1 = 10;
+// num1 is incremented to 11, and then updated value 11 is used
+let numPrefix = ++num1
+console.log(numPrefix); // 11
+
+// updated value of num1
+console.log(num1); // 11
+
+}
+
+
+
+// Unary Decrement Operator : This operator substracts 1 from its operands value and then update it, the postfix and prefix property are same like unary increment operator. 
+
+{
+    // postfix
+    let num1 = 8;
+    // The current value of 8 is used, then num1 value will decreased.
+    let num1postfix = num1--;
+    console.log(num1postfix); // 8
+
+    console.log(num1); // 7
+    
+    let num2 = 15;
+    // num2 is decremented to 14, and then value will be updated.
+    let num2prefix = --num2;
+
+    console.log(num2prefix); // 14
+
+    console.log(num2); // 14
+    
+}
+
+
+
+// Logical NOT(!) Operator : Its a unary operator that negates the boolean value of an operand, convering true to false and false to true. 
+// ex :- 1 
+{
+    let var1 = false;
+    let result1 = !var1;
+    console.log(result1); // true
+
+    let var2 = true;
+    let result2 = !var2;
+    console.log(result2); // false
+    
+}
+
+
+
+// typeOf Operator : This operator returns the datatypes of its operands in the form of a string. 
+// Ex: 
+{
+    let num = 18;
+    let str = "Aashutosh";
+    let isTrue = true;
+    let obj = {name: "Aman", age: 21};
+    let undefinedVar;
+
+    console.log(typeof num); // number
+    console.log(typeof str); // string
+    console.log(typeof isTrue); // boolean
+    console.log(typeof obj); // object
+    console.log(typeof undefinedVar); // undefined
+    
+}
+
+
+// delete operator : This operator removes a property from an object. 
+// Ex :- 1
+let person = 
+{
+    name: "Aashu",
+    age: 26,
+    city: "Noida"
+};
+console.log(person); // { name: 'Aashu', age: 26, city: 'Noida' }
+
+// Deleting the age property from the person object
+delete person.age;
+console.log(person); // { name: 'Aashu', city: 'Noida' }
+

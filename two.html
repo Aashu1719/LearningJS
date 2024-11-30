@@ -19,7 +19,7 @@
     const parent = document.querySelector('.parent')
 
      console.log(parent);
-     console.log(parent.children); // yahan huma mila hai html collection
+     console.log(parent.children); // yahan huma mila hai html collection 
      console.log(parent.children[1].innerHTML); // Tuesday
 
 
@@ -40,12 +40,17 @@
  // its gives monday and thursday
 
 
- // aur aisa nhi hai ki hum sirf parent sa child pe hi aa sakta hai hum child sa parent pe bhi ja sakte hain.
+ // aur aisa nhi hai ki hum sirf parent sa child pe hi move kar sakta hai hum child sa parent pe bhi move kar sakta hain.
  // .....
  const dayOne =  document.querySelector('.day')
- console.log(dayOne);
- // console.log(dayOne.parentElement);
- // console.log(dayOne.parentElementSibling);
+ console.log(dayOne); // monday
+ // console.log(dayOne.parentElement); yahan humara pass complete parent element aagya
+ // console.log(dayOne.parentElementSibling); Tuesday because its gives siblings of the parent 
+
+
+//  ############## ################### ##################### to print nodes in our html files 
+console.log("NOdes: ", parent.childNodes);
+
 
 
 

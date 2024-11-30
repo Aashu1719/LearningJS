@@ -41,7 +41,9 @@ coding.forEach((item) =>
 // // python
 // // cpp
 
-// step 4 :- foreach loop ma hum aur bhi kayi tarika ki values or paramaters ko pass kar sakta hai aisa nhi hai ki ye sir huma values hi nikal ka dega, aur bhi cheeja ye la sakta hai. 
+
+
+// step 4 :- foreach loop ma hum aur bhi kayi tarika ki values or paramaters ko pass kar sakta hai aisa nhi hai ki ye sir huma values hi nikal ka dega, jaise ki index and array ye cheeja ye la sakta hai. 
 coding.forEach((item, index, arr) => 
 {
     console.log(item, index, arr);

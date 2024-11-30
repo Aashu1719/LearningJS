@@ -10,10 +10,11 @@
         <title>Chai aur Code | DOM</title>
 </head>
 <body style="background-color: #212121; color: aliceblue;">
+
 <ul class="language">
     <li>Javascript</li>
 </ul>
-</body>
+
 <script>
     // step 1 :- yahan hum add kar rha hain kuch lis ko with th ehelp of create element and innerHTML
     function addLanguage(langName)
@@ -24,39 +25,70 @@
         appendChild(li)
     }
     addLanguage("python")
-    addLanguage("typrScript")
+    addLanguage("typeScript")
+    // yahan tak humara pas ten kangaugae hai 
+    /* 
+        Javascript
+        python
+        typeScript
+    */
 
-
-    // step 2:- hum same li ko add kr rha hai with some different techniques,
+    // step 2:- hum same li ko add kr rha hai with some different techniques, or in a optimize way
     function addOptiLanguage(langName) {
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(langName));
         document.querySelector('.language').appendChild(li);
     }
     addLanguage('goLang')
+    // now humara pass 4 language ho gyi hai humna is wala ma just appendChild use kiya hai tather then innerhtml and no other difference. 
+    /* 
+        Javascript
+        python
+        typeScript
+        goLnag
+    */
 
 
     // step 3 :- ########### now ab huma value ko edit karna hai uska liya huma usa select karna padega. with the help of replaceWith
     // Edit
     const secondLang = document.querySelector("li:nth-child(2)")
-    // secondLang.innerHTML = "Mojo";
+    // secondLang.innerHTML = "Mojo"; ye approach kam karti hai but his is not a optimize way
     const newli = document.createElement('li')
     newli.textContent = "Mojo"
-    secondLang.replaceWith(newli); // Mojo
+    secondLang.replaceWith(newli); // Mojo 
+    // yahan pe humna second child python ko change kar ka mojo kar diya hai
+       /* 
+        Javascript
+        mojo
+        typeScript
+        goLnag
+    */
+
 
 
     // step 4 :- isma hum value ko change kar ka dekhta hai with the help of outerHtml
     const firstLang = document.querySelector("li:first-child")
     firstLang.outerHTML = '<li>TypeScript</li>'
+    // yahan bhi humna value ko change kar diya hai Javascript ko change kar ka hum na typescript kar diya hai
+     /* 
+        Typescript
+        mojo
+        typeScript
+        goLnag
+    */
 
 
     // step 5 :- isma hum goLang ko remove karta hai remove
     const lastLang = document.querySelector('li:last-child')
     lastLang.remove()
+    // yahan humna golang ko remove kar diya hai yahan phir sa humara pass 3 aa gya hai 
+    /* 
+        Typescript
+        mojo
+        typeScript
+    */
 </script>
-</html> </title>
-</head>
-<body>
+
 
 </body>
 </html>
