@@ -5,3 +5,6 @@ Here we jusyt fix the bug, or something important that the things we put here.
 Here we add some important message related to marketing
 
 add footer note
+
+
+for footer note we add 2025
