@@ -70,5 +70,10 @@ L :- 33
 
 ######################### ########################## ############################ 28-11-24 #############
 lect no : 4 (-1_variable)
-variable kasie bananana hai in ex let, const, var 
-and in const hum doobara sa usa redifne nhi kar sakta. ex at 1to6 6 hlts. 
+
+1. variable kasie bananana hai in ex let, const, var 
+2. and in const hum doobara sa usa redifne nhi kar sakta. ex at 1to6 6 hlts. 
+
+3. print in table form jab hum use karta hai console.table 
+
+4. undefined variable 
