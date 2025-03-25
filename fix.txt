@@ -2,3 +2,5 @@ Here we jusyt fix the bug, or something important that the things we put here.
 
 2. Fix another bug that is 2 
 
+3. One more bug detected and fixed that is 3
+
