@@ -14,3 +14,5 @@ Another marketing content is added.
 
 
 Another pink mode fixes
+
+another fix for light mode. 
